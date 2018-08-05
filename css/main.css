@@ -1,0 +1,28 @@
+/* 全局css */
+body,html{ margin:0; padding:0;}
+body{
+    background: darkgray;
+}
+@font-face{
+    font-family: 'myBlog';
+    src:url('../font/MiFie-Web-Font.eot') format('embedded-opentype'),
+    url('../font/MiFie-Web-Font.svg') format('svg'),
+    url('../font/MiFie-Web-Font.ttf') format('truetype'),
+    url('../font/MiFie-Web-Font.woff') format('woff');
+}
+[class^="icon-"],[class*=" icon-"]{
+    font-family: 'myBlog';
+    font-style: normal;
+}
+.icon-mobilephone::before { content: "\e908"; font-size: 13px; }
+
+ol{
+    list-style: none;
+}
+a,a:hover{
+    text-decoration: none;
+}
+.clearFix{
+    clear: both;
+    height: 0;
+}

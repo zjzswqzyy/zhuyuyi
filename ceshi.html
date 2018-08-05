@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+        }
+        .div1{
+            position: relative;
+            background-color: #cccccc;
+            /*overflow: hidden;*/
+        }
+        .div1::after{
+            display: block;
+            content: '';
+            clear: both;
+            visibility: hidden;
+            height: 0;
+        }
+        .div2{
+            width: 50px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<!--<button>111</button>-->
+<div class="div1">
+    <div class="div2">
+        sdasdasdasdasdad
+    </div>
+</div>
+<script src="lib/jquery-3.3.1.min.js"></script>
+<script>
+//    $("button").click(function () {
+//        var div = $("div");
+//        div.show();
+//        div.text('loading...');
+//        $.ajax({
+//            type:"get",
+//            url:'index.html',
+//            dataType:'html',
+//            success: function (html) {
+//                div.empty().hide(300);
+//                $("html").empty();
+//                $("html").append(html);
+//            }
+//        })
+//    })
+</script>
+</body>
+</html>

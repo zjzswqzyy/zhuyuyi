@@ -1,0 +1,537 @@
+/* header */
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+header nav{
+    background: black;
+
+}
+header nav .row .text-center .mobile-link{
+    position: relative;
+    color: #cccccc;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    margin:25px 10px 25px 10px;
+}
+header nav .row .text-center .mobile-link img{
+    position: absolute;
+    left:50%;
+    margin-left:-60px;
+    display: none;
+}
+header .head{
+    margin-bottom: 0;
+}
+header nav h1{
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+header nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+header nav ul li a{
+    color: #8c8c8c;
+    text-decoration: none;
+    -webkit-transition: color .8s;
+    -moz-transition: color .8s;
+    -ms-transition: color .8s;
+    -o-transition: color .8s;
+    transition: color .8s;
+    display: block;
+    font-size: 16px;
+}
+header nav ul li a:hover,
+header nav ul li a:focus{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid #8c8c8c;
+}
+header nav ul .active a,
+header nav ul .active a:hover,
+header nav ul .active a:focus{
+    color: white;
+    border-bottom: 2px solid #8c8c8c;
+}
+header nav ul .disabled a,
+header nav ul .disabled a:hover,
+header nav ul .disabled a:focus{
+    color: #8c8c8c;
+}
+header nav .nav-middle{
+    position: relative;
+}
+header nav .navbar-header{
+    position: absolute;
+    top: -8px;
+    right: 10px;
+}
+header nav .navbar-header .navbar-toggle{
+    background: #ffffff;
+    margin-top:25px;
+}
+header nav .navbar-header .navbar-toggle:hover,
+header nav .navbar-header .navbar-toggle:focus{
+    background: #cccccc;
+}
+header nav .navbar-header .navbar-toggle .icon-bar{
+    background-color: #888;
+}
+header nav .logo > .imgBox{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 45px;
+    overflow: hidden;
+}
+header nav .logo > .imgBox > img{
+    width: 80px;
+    height: 80px;
+}
+/* 主体 */
+section .container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+}
+/* 右侧空白导航 */
+section .container-fluid .blank-box{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 999;
+    width: 140px;
+    cursor: pointer;
+    margin:100px 0 0 0;
+    overflow: hidden;
+}
+section .container-fluid .blank-box a{
+    display: block;
+    position: relative;
+    width: 130px;
+    height: 30px;
+    line-height:30px;
+    margin-bottom:2px;
+    background: #fff;
+    padding-right: 10px;
+    overflow: hidden;
+    color: #333;
+    cursor: pointer;
+    right: -110px;
+}
+section .container-fluid .blank-box a:hover{
+    text-decoration: none;
+    color:#1974A1;
+}
+section .container-fluid .blank-box a:hover span{
+    background:#0f0f0f;
+}
+section .container-fluid .blank-box a span{
+    display: block;
+    float: left;
+    width: 30px;
+    background: #636871;
+    color:#fff;
+    font-size:16px;
+    text-align: center;
+    margin-right: 10px;
+    font-style: normal;
+}
+/* 返回顶部 */
+section .container-fluid .toTop{
+    position: fixed;
+    right: 100px;
+    bottom:100px;
+    background: #ccc;
+    z-index: 1000;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px;
+    cursor: pointer;
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -ms-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+section .container-fluid .toTop:hover{
+    color: #cccccc;
+    background: #0f0f0f;
+}
+/**/
+section .container-fluid .homePage-1{
+    height: 700px;
+    position: relative;
+}
+section .container-fluid .homePage-1 h4{
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    color: #0f0f0f;
+    text-shadow: 0.7em 0.9em 0.2em #0f0f0f,
+                 -0.7em -0.9em 0.2em #0f0f0f,
+                -0.1em 0.1em 0.2em #2f2f2f;
+}
+section .container-fluid .homePage-1 .homePage-1-bgPic{
+    background:url("../img/razer-adaro-in-ears-usp-3.jpg") repeat fixed;
+    background-size: cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1000;
+}
+
+/* 3d滚动 */
+section .container-fluid .homePage-2{
+    background: url("../img/bg1.jpg") left top;
+    position: relative;
+    height: 500px;
+}
+section .container-fluid .homePage-2 .title-2{
+    position: absolute;
+    top:200px;
+    left:50px;
+}
+section .container-fluid .homePage-2 .title-2 h4{
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    color: #ccc;
+    text-shadow: 0.7em 0.9em 0.2em #ccc,
+    -0.7em -0.9em 0.2em #ccc,
+    -0.1em 0.1em 0.2em #ccc;
+}
+section .container-fluid .homePage-2 .notes{
+    position: absolute;
+}
+section .container-fluid .homePage-2 h3{
+    color: #ddd;
+    text-shadow: -0.7em 0.9em 0.2em #ccc,
+    0.7em -0.9em 0.2em #ccc,
+    -0.1em 0.1em 0.2em #ccc;
+}
+section .container-fluid .homePage-2 .notes .span-text{
+    margin-top:350px;
+    display: block;
+    word-break: break-all;
+}
+section .container-fluid .homePage-2 .rotateBox{
+    width: 235px;
+    height: 235px;
+    position: absolute;
+    bottom:150px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -moz-perspective: 1000px;
+    z-index: 2;
+}
+section .container-fluid .rotateBox .scene{
+    transform-style: preserve-3D;
+    width: 240px;
+    height: 240px;
+    -webkit-transform-origin:50%;
+    -moz-transform-origin:50%;
+    -ms-transform-origin:50%;
+    -o-transform-origin:50%;
+    transform-origin:50%;
+    float:left;
+    margin-right:60px;
+    -webkit-animation:slide 18s linear infinite;
+    -o-animation:slide 18s linear infinite;
+    animation:slide 18s linear infinite;
+}
+section .container-fluid .rotateBox .scene ul li{
+    list-style: none;
+    width: 235px;
+    height: 235px;
+    border: 5px solid #ccc;
+    position: absolute;
+    overflow: hidden;
+}
+section .container-fluid .rotateBox .scene ul li img{
+    width: 235px;
+    height: 235px;
+}
+section .container-fluid .rotateBox .scene ul li:nth-child(1){
+    transform:rotateY(0deg) translateZ(260px);
+}
+section .container-fluid .rotateBox .scene ul li:nth-child(2){
+    transform:rotateY(60deg) translateZ(260px);
+}
+section .container-fluid .rotateBox .scene ul li:nth-child(3){
+    transform:rotateY(120deg) translateZ(260px);
+}
+section .container-fluid .rotateBox .scene ul li:nth-child(4){
+    transform:rotateY(180deg) translateZ(260px);
+}
+section .container-fluid .rotateBox .scene ul li:nth-child(5){
+    transform:rotateY(240deg) translateZ(260px);
+}
+section .container-fluid .rotateBox .scene ul li:nth-child(6){
+    transform:rotateY(300deg) translateZ(260px);
+}
+/*动画*/
+@-webkit-keyframes slide {
+    from{
+        transform: rotateY(0deg);
+    } to{
+        transform: rotateY(360deg);
+    }
+}
+@keyframes slide {
+    from{
+        transform: rotateY(0deg);
+    } to{
+        transform: rotateY(360deg);
+    }
+}
+section .container-fluid .rotateBox .scene:hover{
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+section .container-fluid .rotateBox .scene li:hover img{
+    transform: scale(1.2);
+    border:5px solid rgba(255,255,255,0.5);
+}
+/* 会走得心 */
+.xin{
+    position: fixed;
+    bottom: -150px;
+    left: -600px;
+    opacity:0;
+    -webkit-animation: love 8s linear infinite;
+    animation:love 8s linear infinite;
+}
+@-webkit-keyframes love {
+    0%{  opacity: 1;  }
+    20%{  bottom: 50px;  left: -300px;  opacity: 0;  }
+    40%{  bottom: 150px;  left: 0px;  opacity: 1;  }
+    60%{  bottom: 250px;  left: 225px;  opacity: 0;  }
+    80%{  bottom: 150px;  left: 500px;  opacity: 1;  }
+    100%{  bottom: 50px;  left: 800px;  opacity: 0;  }
+}
+@keyframes love {
+    0%{  opacity: 1;  }
+    20%{  bottom: 50px;  left: -300px;  opacity: 0;  }
+    40%{  bottom: 150px;  left: 0px;  opacity: 1;  }
+    60%{  bottom: 250px;  left: 225px;  opacity: 0;  }
+    80%{  bottom: 150px;  left: 500px;  opacity: 1;  }
+    100%{  bottom: 50px;  left: 800px;  opacity: 0;  }
+}
+section .container-fluid .homePage-3{
+    position: relative;
+    height: 700px;
+}
+section .container-fluid .homePage-3 .homePage-3-bgPic{
+    background:url("../img/ez.jpg") repeat fixed;
+    background-size: cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1000;
+}
+section .container-fluid .homePage-4{
+    background: url("../img/bg1.jpg") left top;
+    position: relative;
+    height: 500px;
+}
+section .container-fluid .homePage-4 .writings{
+    position:absolute;
+    top:10px;
+    right: 20%;
+}
+section .container-fluid .homePage-4 .writings h3{
+    color: #ddd;
+    text-shadow: 0.7em 0.9em 0.2em #ccc,
+    -0.7em -0.9em 0.2em #ccc,
+    -0.1em 0.1em 0.2em #ccc;
+}
+section .container-fluid .homePage-4 .writings > span{
+    display:block;
+    word-break: break-all;
+    color: #aaa;
+    font-size: 14px;
+}
+section .container-fluid .homePage-5{
+    position: relative;
+    height: 700px;
+}
+section .container-fluid .homePage-5 .homePage-5-bgPic{
+    background:url("../img/adc.jpg") repeat fixed;
+    background-size: cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1000;
+}
+/* footer */
+footer{
+    position: absolute;
+    top:3050px;
+    width: 100%;
+    height: 50px;
+    background: url("../img/footerbg.jpg");
+    opacity: 0.8;
+    -webkit-box-shadow: 0 -5px 10px #3a3a3a;
+    -moz-box-shadow: 0 -5px 10px #3a3a3a;
+    box-shadow: 0 -5px 10px #3a3a3a;
+}
+footer span{
+    padding-top: 10px;
+    padding-left: 50px;
+    display: block;
+    color: #ccc;
+    font-size: 24px;
+}
+footer span:nth-child(1){
+    color: red;
+}
+footer span:nth-child(2){
+    color: white;
+}
+footer span:nth-child(3){
+    color: yellow;
+}
+footer span:nth-child(4){
+    color: indianred;
+}
+footer span:nth-child(5){
+    color: green;
+}
+footer span:nth-child(6){
+      color: #57faff;
+}
+footer span:nth-child(7){
+    color: deeppink;
+}
+footer span:nth-child(8){
+    color: deepskyblue;
+}
+footer span:nth-child(9){
+    color: orange;
+}
+footer span:nth-child(10){
+    color: darkgreen;
+}
+
+
+
+
+
+
+
+
+/* 媒体查询 */
+@media (max-width: 767px){
+    header nav ul li a{
+        margin-bottom: 15px;
+        margin-right: 15px;
+        font-size: 18px;
+    }
+    section .container-fluid .homePage-1{
+        height: 400px;
+    }
+    section .container-fluid .homePage-1 .homePage-1-bgPic{
+        background:url("../img/razer-adaro-in-ears-usp-3-min.png") repeat fixed;
+    }
+    section .container-fluid .homePage-2{
+        background:url("../img/bg1-min.png") repeat;
+        height: 400px;
+    }
+    section .container-fluid .homePage-3{
+        height: 400px;
+    }
+    section .container-fluid .homePage-3 .homePage-3-bgPic{
+        background:url("../img/ez-min.png") repeat fixed;
+    }
+    section .container-fluid .homePage-4{
+        background:url("../img/bg1-min.png") repeat;
+        height: 400px;
+    }
+    section .container-fluid .homePage-5{
+        height: 400px;
+    }
+    section .container-fluid .homePage-5 .homePage-5-bgPic{
+        background:url("../img/adc-min.png") repeat fixed;
+    }
+    section .container-fluid .toTop{
+        right:15px;
+    }
+    section .container-fluid .rotateBox .scene{
+        -webkit-transform-origin:center center 0;
+        -moz-transform-origin:center center 0;
+        -ms-transform-origin:center center 0;
+        -o-transform-origin:center center 0;
+        transform-origin:center center 0;
+    }
+    section .container-fluid .homePage-2 .rotateBox,
+    section .container-fluid .rotateBox .scene,
+    section .container-fluid .rotateBox .scene ul li,
+    section .container-fluid .rotateBox .scene ul li img{
+        width: 150px;
+        height: 150px;
+    }
+    section .container-fluid .rotateBox .scene ul li:nth-child(1){
+        transform:rotateY(0deg) translateZ(150px);
+    }
+    section .container-fluid .rotateBox .scene ul li:nth-child(2){
+        transform:rotateY(60deg) translateZ(150px);
+    }
+    section .container-fluid .rotateBox .scene ul li:nth-child(3){
+        transform:rotateY(120deg) translateZ(150px);
+    }
+    section .container-fluid .rotateBox .scene ul li:nth-child(4){
+        transform:rotateY(180deg) translateZ(150px);
+    }
+    section .container-fluid .rotateBox .scene ul li:nth-child(5){
+        transform:rotateY(240deg) translateZ(150px);
+    }
+    section .container-fluid .rotateBox .scene ul li:nth-child(6){
+        transform:rotateY(300deg) translateZ(150px);
+    }
+    .xin img{
+        width: 75px;
+        height: 65px;
+    }
+    section .container-fluid .homePage-4 .writings{
+        position:absolute;
+        right: 0;
+        left:0
+    }
+    section .container-fluid .homePage-4 .writings h3{
+        margin-top:10px;
+        margin-bottom: -5px;
+    }
+    section .container-fluid .homePage-4 .writings span{
+        margin-left:10px;
+        margin-right: 10px;
+    }
+    section .container-fluid .homePage-2 .notes .span-text{
+         margin-top: 60%;
+         display: block;
+         word-break: break-all;
+    }
+
+}

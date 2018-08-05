@@ -1,0 +1,190 @@
+body{
+    background: url("../img/bgnotes.jpg");
+}
+/* header */
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+header nav{
+    background: black;
+
+}
+header nav .row .text-center .mobile-link{
+    position: relative;
+    color: #cccccc;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    margin:25px 10px 25px 10px;
+}
+header nav .row .text-center .mobile-link img{
+    position: absolute;
+    left:50%;
+    margin-left:-60px;
+    display: none;
+}
+header .head{
+    margin-bottom: 0;
+}
+header nav h1{
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+header nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+header nav ul li a{
+    color: #8c8c8c;
+    text-decoration: none;
+    -webkit-transition: color .8s;
+    -moz-transition: color .8s;
+    -ms-transition: color .8s;
+    -o-transition: color .8s;
+    transition: color .8s;
+    display: block;
+    font-size: 16px;
+}
+header nav ul li a:hover,
+header nav ul li a:focus{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid #8c8c8c;
+}
+header nav ul .active a,
+header nav ul .active a:hover,
+header nav ul .active a:focus{
+    color: white;
+    border-bottom: 2px solid #8c8c8c;
+}
+header nav ul .disabled a,
+header nav ul .disabled a:hover,
+header nav ul .disabled a:focus{
+    color: #8c8c8c;
+}
+header nav .nav-middle{
+    position: relative;
+}
+header nav .navbar-header{
+    position: absolute;
+    top: -8px;
+    right: 10px;
+}
+header nav .navbar-header .navbar-toggle{
+    background: #ffffff;
+    margin-top:25px;
+}
+header nav .navbar-header .navbar-toggle:hover,
+header nav .navbar-header .navbar-toggle:focus{
+    background: #cccccc;
+}
+header nav .navbar-header .navbar-toggle .icon-bar{
+    background-color: #888;
+}
+header nav .logo > .imgBox{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 45px;
+    overflow: hidden;
+}
+header nav .logo > .imgBox > img{
+    width: 80px;
+    height: 80px;
+}
+
+/* 右侧空白导航 */
+
+main .container .blank-box{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 999;
+    width: 140px;
+    cursor: pointer;
+    margin:100px 0 0 0;
+    overflow: hidden;
+}
+main .container .blank-box a{
+    display: block;
+    position: relative;
+    width: 130px;
+    height: 30px;
+    line-height:30px;
+    margin-bottom:2px;
+    background: #fff;
+    padding-right: 10px;
+    overflow: hidden;
+    color: #333;
+    cursor: pointer;
+    right: -110px;
+}
+main .container .blank-box a:hover{
+    text-decoration: none;
+    color:#1974A1;
+}
+main .container .blank-box a:hover span{
+    background:#0f0f0f;
+}
+main .container .blank-box a span{
+    display: block;
+    float: left;
+    width: 30px;
+    background: #636871;
+    color:#fff;
+    font-size:16px;
+    text-align: center;
+    margin-right: 10px;
+    font-style: normal;
+}
+/* 正文 */
+main{
+}
+main .container > .row{
+    position: relative;
+}
+/**/
+main .container .row > .article{
+    position: absolute;
+    padding-top:120px;
+    padding-bottom: 50px;
+    background: rgba(0,0,0,0.5);
+    /*height: 800px;*/
+}
+main .container .row > .article h3{
+    color: whitesmoke;
+    font-size: 28px;
+}
+main .container .row > .article > .article-text > span{
+    color: #ccc;
+    font-size: 18px;
+    word-break: break-all;
+    text-indent: 36px;
+    line-height: 40px;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    main .container .row .article h3{
+        font-size: 20px;
+    }
+    main .container .row .article .article-text span{
+        font-size: 12px;
+        text-indent: 24px;
+        line-height: 30px;
+    }
+    main .container .row > .article{
+        position: relative;
+    }
+
+}
